@@ -1,0 +1,14 @@
+.nav-bar{
+    background-color: rgb(130, 132, 248);
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcome-section{
+    background-color: LightBlue;
+    padding: 20px;
+    text-align: center;
+}

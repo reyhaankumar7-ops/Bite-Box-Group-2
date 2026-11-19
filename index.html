@@ -5,12 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BiteBox</title>
-
-    <style>
-      div {
-        background-color:orange;
-      }
-    </style>
+    <link rel="stylesheet" href="./Style.css">
 </head>
 
 <body>
@@ -19,28 +14,29 @@
 
 
     <nav>
-        <div>
-            <h1><img src="./assets/images/logo.jpg" height="40" width="40"><mark>BiteBox</mark></h1>
-            <a href="index.html">Home</a>
-            |
-            <a href="Menu.html">Menu</a>
-            |
-            <a href="About.html">About</a>
-            |
-            <a href="Services.html"> Services</a>
-            |
-            <a href="Contact.html">Contact</a>
+        <div class="nav-bar">
+            <div>
+                <h1><img src="./assets/images/logo.jpg" height="40" width="40"><span>BiteBox</span></h1>
+            </div>
+            <div>
+                <a href="index.html">Home</a>
+                |
+                <a href="menu.html">Menu</a>
+                |
+                <a href="about.html">About</a>
+                |
+                <a href="Services.html"> Services</a>
+                |
+                <a href="contact.html">Contact</a>
 
+                <a href="./Login.html"><button>Login</button></a>
 
-            <a href="./Login.html"><button>Login</button></a>
-
-
-        </div>
+            </div>
     </nav>
 
 
     <main>
-        <section>
+        <section class="welcome-section">
             <!-- Welcome Section -->
 
             <h2>Welcome to BiteBox</h2>
@@ -305,8 +301,8 @@
             </ul>
         </div>
         <hr>
-        
-        <p>2026 BiteBox.  All Rights Reserved</p>
+
+        <p>2026 BiteBox. All Rights Reserved</p>
     </footer>
 
 
