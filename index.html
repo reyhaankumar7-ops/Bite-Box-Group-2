@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BiteBox</title>
     <link rel="stylesheet" href="./Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Felipa&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -30,9 +32,8 @@
                 <a href="contact.html">Contact</a>
 
                 <a href="login.html"><button class="login-btn">Login</button></a>
-            
+
             </div>
-            
         </div>
     </nav>
 
@@ -40,32 +41,28 @@
     <main>
         <section class="welcome-section">
             <!-- Welcome Section -->
-
-            <h1>Welcome to BiteBox</h1>
-            <p>
-                <strong id="fresh-food">Fresh Food</strong>
-                •
-                <em id="fast-delivery">Fast Delivery</em>
-            </p>
+            <!-- <h1>Welcome to BiteBox</h1>
+            <p class="welcome-text">We serve the best food in town. Order now and get your food delivered to your
+                doorstep.</p> -->
         </section>
-
-        <div>
-            <img src="./assets/images/banner.jpg" alt="banner" height="700" width="1200">
-        </div>
-
+        <p>
+            <strong id="fresh-food">Fresh Food</strong>
+            •
+            <em id="fast-delivery">Fast Delivery</em>
+        </p>
 
         <!--Todays Featured Dishes -->
 
         <hr>
 
-        <section>
+        <section class="featured-dishes">
             <h2>Today's Featured Dishes</h2>
             <div class="card">
                 <img src="./assets/images/pizzaindex.jpg" alt="Pizza" height="300" width="300">
                 <h2>Pizza</h2>
                 <p>
                 <ul>
-                    <li> Panir Tikka</li>
+                    <li> Paneer Tikka</li>
                     <li>White Sauce</li>
                     <li>Vegetarian/Vegan Patties</li>
                 </ul>
@@ -74,7 +71,7 @@
                 <p>Rs.<del>499</del> / <strong>249</strong></p>
                 <button>Order Now</button>
             </div>
-            <div>
+            <div class="card">
                 <img src="./assets/images/burgerindex.jpg" alt="Pizza" height="300" width="300">
                 <h2>Classic Burger</h2>
                 <p>
@@ -82,14 +79,27 @@
                     <li>Commercial Griddle / Flat-top Grill</li>
                     <li>Melty cheese</li>
                     <li>Vegetarian/Vegan Patties</li>
-
                 </ul>
                 </p>
                 <p><span>⭐⭐⭐⭐⭐</span> (134)</p>
                 <p>Rs.<del>499</del> / <strong>249</strong></p>
                 <button>Order Now</button>
             </div>
-            <div>
+            <div class="card">
+                <img src="./assets/images/friesindex.jpg" alt="Pizza" height="300" width="300">
+                <h2>Fries</h2>
+                <p>
+                <ul>
+                    <li>Regular Fries</li>
+                    <li>Sauce / Mayo</li>
+                    <li>Vegetarian/Vegan Patties</li>
+                </ul>
+                </p>
+                <p><span>⭐⭐⭐⭐⭐</span> (134)</p>
+                <p>Rs.<del>499</del> / <strong>249</strong></p>
+                <button>Order Now</button>
+            </div>
+            <div class="card">
                 <img src="./assets/images/friesindex.jpg" alt="Pizza" height="300" width="300">
                 <h2>Fries</h2>
                 <p>
@@ -104,9 +114,7 @@
                 <p>Rs.<del>499</del> / <strong>249</strong></p>
                 <button>Order Now</button>
             </div>
-
-
-            <div>
+            <div class="card">
                 <img src="./assets/images/friesindex.jpg" alt="Pizza" height="300" width="300">
                 <h2>Fries</h2>
                 <p>
@@ -121,9 +129,7 @@
                 <p>Rs.<del>499</del> / <strong>249</strong></p>
                 <button>Order Now</button>
             </div>
-
-
-            <div>
+            <div class="card">
                 <img src="./assets/images/friesindex.jpg" alt="Pizza" height="300" width="300">
                 <h2>Fries</h2>
                 <p>
@@ -138,9 +144,7 @@
                 <p>Rs.<del>499</del> / <strong>249</strong></p>
                 <button>Order Now</button>
             </div>
-
-
-            <div>
+            <div class="card">
                 <img src="./assets/images/friesindex.jpg" alt="Pizza" height="300" width="300">
                 <h2>Fries</h2>
                 <p>
@@ -155,9 +159,7 @@
                 <p>Rs.<del>499</del> / <strong>249</strong></p>
                 <button>Order Now</button>
             </div>
-
-
-            <div>
+            <div class="card">
                 <img src="./assets/images/friesindex.jpg" alt="Pizza" height="300" width="300">
                 <h2>Fries</h2>
                 <p>
@@ -172,26 +174,6 @@
                 <p>Rs.<del>499</del> / <strong>249</strong></p>
                 <button>Order Now</button>
             </div>
-
-
-            <div>
-                <img src="./assets/images/friesindex.jpg" alt="Pizza" height="300" width="300">
-                <h2>Fries</h2>
-                <p>
-                <ul>
-                    <li>Regular Fries</li>
-                    <li>Sauce / Mayo</li>
-                    <li>Vegetarian/Vegan Patties</li>
-
-                </ul>
-                </p>
-                <p><span>⭐⭐⭐⭐⭐</span> (134)</p>
-                <p>Rs.<del>499</del> / <strong>249</strong></p>
-                <button>Order Now</button>
-            </div>
-
-
-
         </section>
 
         <!--  -->
@@ -262,8 +244,7 @@
             <div>
                 <form>
                     <input type="email" placeholder="Enter Your Email">
-                    <button type="submit">Subscribe</button>
-
+                    <button id="subscribe-btn" type="submit">Subscribe</button>
                 </form>
             </div>
         </section>
@@ -272,16 +253,15 @@
     </main>
     <hr>
     <!-- footer section -->
-    <footer>
+    <footer class="footer-links">
         <div>
             <div>
-                <h3><img src="./assets/images/logo.jpg" alt="Food logo" height="20" width="20"><mark>BiteBox</mark></h3>
+                <h3><img src="./assets/images/logo.jpg" alt="Food logo" height="20" width="20">BiteBox</h3>
             </div>
         </div>
         <div>
             <h3>Quick Links</h3>
             <ul>
-
                 <li> <a href="./index.html"></a>Home</li>
                 <li><a href="./Menu.html"></a>Menu</li>
                 <li><a href="./About.html"></a>About</li>
