@@ -1,11 +1,11 @@
-.NavBar{
+/* .NavBar{
 
     height: 60px;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
+    justify-content: space-between; */
+/* }
 
 .welcome-heading
 {
@@ -73,7 +73,7 @@ box-shadow: rgba(165, 69, 69, 0.24) 20px 5px 8px;
     border: 10px;
     margin: 10%; */
 }
-
+/* 
 .Card3{
     background-color:lightpink;
     border-radius: 10px;
@@ -95,9 +95,9 @@ box-shadow: rgba(165, 69, 69, 0.24) 20px 5px 8px;
     font-family: 'Courier New', Courier, monospace;
     text-shadow: 1px 3px 4px Purple;
     font-style: italic;
-}
+} */
 
-.order-button {
+/* .order-button {
 
     color: rgb(255, 255, 255);
     text-align: center;
@@ -108,18 +108,33 @@ box-shadow: rgba(165, 69, 69, 0.24) 20px 5px 8px;
     font-weight: bold;
     text-shadow: 1px 3px 4px white;
     text-size: 40px;
-}
+     border-radius: 40px;
+} */
 
+/* .order-button {
+    color: white;
+    text-align: center;
+    background-color: black;
+    border: 2px solid black;
+    height: 40px;
+    width: 60%;
+    font-weight: bold;
+    border-radius: 40px;
+
+    display: block;
+    margin: 0 auto;
+} */
+/* 
 .Price {
     text-align: center;
     font-size: 30px;
     font-weight: bold;
     font-family: 'Courier New', Courier, italic;
     text-shadow: 1px 3px 4px white;
-}
+} */
 
 
-.Card> h2 {
+/* .Card> h2 {
     color: solid black;
     font-size: 40px;
     text-align: center;
@@ -130,7 +145,136 @@ box-shadow: rgba(165, 69, 69, 0.24) 20px 5px 8px;
     width: 100%;
 }
 
-.Rating {
+/* .Rating {
     text-align: center;
     font-size: 40px;
+}
+.Card2> h2 { */
+    color: solid black;
+    font-size: 40px;
+    text-align: center;
+} */
+
+/* .Card3> h2 {
+    color: solid black;
+    font-size: 40px;
+    text-align: center;
+    
+} */
+/* 
+.Cards {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    padding:30px;
+    gap: 20px;
+     */
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    font-family: 'Courier New', Courier, Italic;
+    background-color: rgb(234, 208, 208);
+    color:#333;
+    line-height: 1.6;
+}
+
+button,
+input {
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+/* NAVBAR */
+
+.NavBar-Container{
+    background-color: rgb(248, 248, 248);
+    padding: 15px 6px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.NavBar {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgb(255, 255, 255); */
+    gap: 20px;
+}
+
+.logo{
+    display: flex;
+    /* background-color: rgb(199, 85, 85); */
+    align-items: center;
+    gap: 10px;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.logo>img{
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(222, 149, 149);
+}
+
+.links{
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+.links:hover{
+    color:cadetblue;
+    text-decoration: underline;
+}
+
+.Login-link{
+    margin-left: 20px;
+}
+    
+.Login-btn{
+    background-color: rgb(81, 117, 118);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 100;
+    transition: all 0.3s ease-in-out;
+}
+
+.login-btn:hover{   
+    background-color: rgb(228, 13, 13);
 }
