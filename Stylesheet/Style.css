@@ -605,7 +605,7 @@ gap: 25px;
 /* --------------------------------------------------------------------------------------end------------------------------------------------------ */
 
 
-@media (max-width:768px)
+@media (max-width:430px)
 {
     .NavBar{
         flex-direction: column;
@@ -634,6 +634,65 @@ gap: 25px;
     .Featured-Dishes,
     .Review-Section{
         grid-template-columns: 1fr;
+    }
+
+    .offer-section{
+        flex-direction: column;
+        text-align: center;
+    }
+    
+
+    .offer-content h2{
+        font-size: 27px;
+        align-items: center;
+    }
+
+    .newsletter-section{
+        flex-direction: column;
+    }
+
+    .section-Title{
+        font-size: 20px;
+
+    }
+}
+
+/* --------Tab------- */
+
+@media (max-width:768px)
+{
+    .NavBar{
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .nav-links{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .welcome-section{
+        height: 100px;
+    }
+
+    .welcome-heading{
+        font-size: 65px;
+        color: #020024;
+    }
+
+    .Para{
+        font-size:30px;
+    }
+    
+
+    #heading{
+        font-size: 30px;
+    }
+
+    .Featured-Dishes,
+    .Review-Section{
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .offer-section{
